@@ -15,7 +15,7 @@ const MovieDetails = () => {
   const location = useLocation();
 
   const BASE_IMG_URL = 'https://image.tmdb.org/t/p/w300/';
-
+// const BASE_IMG_URL = 'https://image.tmdb.org/t/p/w300/';
   useEffect(() => {
     getMovieByID(movieId).then(movie => setMovie(movie));
   }, [movieId]);
